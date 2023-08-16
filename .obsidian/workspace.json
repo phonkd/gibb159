@@ -11,8 +11,12 @@
             "id": "3b2ec4fcc9e459ca",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "NullNUMMER24/README.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "NullNUMMER24/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "NullNUMMER24/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "NullNUMMER24/README.md"
+              }
             }
           }
         ]
@@ -140,16 +148,16 @@
   },
   "active": "3b2ec4fcc9e459ca",
   "lastOpenFiles": [
+    "NullNUMMER24/images/KerberosTabelle.png",
+    "NullNUMMER24/M159-Teil1_AB02---gelöst.xlsx",
+    "NullNUMMER24/lu5281qg8o.tmp",
+    "gibbgschmüdder/lu5281qg8l.tmp",
+    "gibbgschmüdder/lu5281qg09.tmp",
+    "gibbgschmüdder/lu5281qfwu.tmp",
+    "gibbgschmüdder/lu5281qehu.tmp",
+    "gibbgschmüdder/lu5281qdye.tmp",
+    "gibbgschmüdder/lu5281qd36.tmp",
     "gibbgschmüdder/M159-Teil1_AB02.xlsx",
-    "gibbgschmüdder/M159-Teil1_AB01-Kerberos-Messages&Keys.xlsx",
-    "gibbgschmüdder/M159-Teil1_AB01.docx",
-    "gibbgschmüdder/01-M159-Teil1_AB01-Kerberos-Messages&Keys_AUFGABEN.docx",
-    "gibbgschmüdder/03_Scripts_und_Arbeitsblaetter/Thema_1/ScreencastKerberos_mit_xls-Sheet/M159-KerberosScreencast.mkv",
-    "gibbgschmüdder/03_Scripts_und_Arbeitsblaetter/Thema_1/ScreencastKerberos_mit_xls-Sheet",
-    "gibbgschmüdder/03_Scripts_und_Arbeitsblaetter/Thema_1",
-    "gibbgschmüdder/03_Scripts_und_Arbeitsblaetter/Thema_2/00-M159T2-Intro&Arbeitsplan.pdf",
-    "gibbgschmüdder/03_Scripts_und_Arbeitsblaetter/Thema_2/Vorlagen/00-159.Arbeitsjournal.docx",
-    "gibbgschmüdder/03_Scripts_und_Arbeitsblaetter/Thema_2/Vorlagen/00-LB2_M159_Muster_Bewertungsraster.xlsx",
-    "gibbgschmüdder/03_Scripts_und_Arbeitsblaetter/Thema_2/Vorlagen"
+    "gibbgschmüdder/M159-Teil1_AB01-Kerberos-Messages&Keys.xlsx"
   ]
 }
