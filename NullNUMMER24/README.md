@@ -1,7 +1,7 @@
 # Modul 159
 ## Arbeitsblatt 01
 ### Exceltabelle
-![KerberosTabelle](NullNUMMER24/images/KerberosTabelle.png)
+![KerberosTabelle](images/KerberosTabelle.png)
 ### Was würde passieren, wenn der private Schlüssel des KDC bekannt wäre ?
 1. **Falsche Identitäten:** Die Leute könnten gefälschte Tickets erstellen und sich als andere ausgeben, um auf Dinge zuzugreifen, für die sie keine Berechtigung haben.
 2. **Geheimnisenthüllung:** Der Datenverkehr, der normalerweise geschützt ist, könnte entschlüsselt werden, was zu Informationsdiebstahl führen könnte.
