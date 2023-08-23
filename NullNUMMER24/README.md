@@ -47,3 +47,77 @@ Für die Kerberos-Authentisierung wird ein dritter Teilnehmer benötigt, der Ker
 Ein Realm ist eine Kerberos-Umgebung. Jeder User oder Client sowie jeder Dienst oder Host gehören zu einem Kerberos Realm. 
 ##### 2.3.3 Principals
 Clients und Dienste in einem Realm werden durch **Kerberos Principals** repräsentiert. 
+
+### Aufbau einer eigenen Kerberos Infrastruktur
+#### OS-Updaten
+Die VMs **vmLS1** und **vmLP1** müssen aktualisiert werden. Da es sich um Ubuntu-Server handelt, sollte man apt verwenden:
+```Bash
+sudo apt update -y
+sudo apt upgrade -y
+```
+#### Netzwerkkonfiguration
+##### vmLS4
+Die Netzwerkkonfiguration für vmLS1 sollte in diesem File angepasst werden: `/etc/netplan/00-eth0.yaml`
+```/etc/netplan/00-eth0.yaml
+network:
+ ethernets:
+ eth0:
+ addresses:
+ - 192.168.210.64/24
+ nameservers:
+ addresses:
+ - 192.168.210.1
+ search:
+ - m159.iet-gibb.ch
+ routes:
+ - to: default
+ via: 192.168.210.1
+ version: 2
+```
+Der netplan kann mit:
+```Bash
+sudo netplan apply 
+```
+verwendet werden. 
+### Key Distribution Center von MIT Kerberos
+Der FQDN des Linux-Servers vmLS1 lautet: **vmLS4.m159.iet-gibb.ch**. 
+#### Installation von Kerberos auf vmLS1
+Install command:
+```Bash
+apt install krb5-user krb5-doc krb5-kdc krb5-admin-server krb5-kdc-ldap
+```
+![InstallattionKerberos-vmLS4-01](images/InstallattionKerberos-vmLS4-01.png)
+![InstallattionKerberos-vmLS4-02](images/InstallattionKerberos-vmLS4-02.png)
+![InstallattionKerberos-vmLS4-03](images/InstallattionKerberos-vmLS4-03.png)
+![InstallattionKerberos-vmLS4-04](images/InstallattionKerberos-vmLS4-04.png)
+#### Konfiguration des KDC
+Die Konfiguration des KDC sollte von Grund auf durchgeführt werden. Deshalb sollte zunächst die Konfigurationsvorlagen gelöscht werden. Diese befinden sich unter `/etc/krb5kdc/kdc.conf` und `/etc/krb5.conf`.
+Die brereits gestarteten Deamons können so gestoppt werden:
+```Bash
+systemctl stop krb5-kdc systemctl stop krb5-admin-server mv /etc/krb5kdc/kdc.conf /etc/krb5kdc/kdc.conf.BACKUP mv /etc/krb5.conf /etc/krb5.conf.BACKUP
+```
+Nun sollte die Konfiguration für den KDC angelegt werden (`/etc/krbr5kdc/kdc.conf`)
+```kdc.conf
+[libdefaults]
+ default_realm = M159.IET-GIBB.CH
+[kdcdefaults]
+ kdc_ports = 750,88
+[realms]
+ M159.IET-GIBB.CH = {
+ database_name = /var/lib/krb5kdc/principal
+ admin_keytab = FILE:/etc/krb5kdc/kadm5.keytab
+ acl_file = /etc/krb5kdc/kadm5.acl
+ key_stash_file = /etc/krb5kdc/stash
+ kdc_ports = 750,88
+ max_life = 10h 0m 0s
+ max_renewable_life = 7d 0h 0m 0s
+  master_key_type = des3-hmac-sha1
+ #supported_enctypes = aes256-cts:normal aes128-cts:normal
+ default_principal_flags = +preauth
+ }
+[logging]
+ kdc = SYSLOG:INFO:AUTH
+ admin_server = SYSLOG:INFO:AUTH
+ ```
+##### Initialisierung der KDC-Datenbank
+Bevor das KDC gestartet wird, müssen noch **Principals** angelegt werden. 
