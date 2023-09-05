@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"653bc6fbd646e6ba","x":-500,"y":-160,"width":250,"height":60,"type":"text","text":"# PC1"},
+		{"id":"afacae738b9f36dd","x":0,"y":-420,"width":400,"height":140,"type":"file","file":"authentication server.md"},
+		{"id":"9971dc759defcd8e","x":-500,"y":140,"width":400,"height":560,"type":"file","file":"elis/taming kerberos notes/Key Distribuition Center (KDC).md"}
+	],
+	"edges":[
+		{"id":"42076ec937ba80e1","fromNode":"653bc6fbd646e6ba","fromSide":"right","toNode":"afacae738b9f36dd","toSide":"left","label":"PC1,TGS,Random number"},
+		{"id":"9f0011ab9ab54647","fromNode":"afacae738b9f36dd","fromSide":"left","toNode":"653bc6fbd646e6ba","toSide":"bottom"}
+	]
+}

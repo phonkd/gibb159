@@ -11,11 +11,14 @@
             "id": "3b2ec4fcc9e459ca",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "elis/lb1 Lernziele.md",
-                "mode": "source",
-                "source": false
+                "file": "elis/taming kerberos notes/Ablauf.canvas",
+                "viewState": {
+                  "x": 94,
+                  "y": -15,
+                  "zoom": 0
+                }
               }
             }
           }
@@ -85,7 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "elis/lb1 Lernziele.md",
+                "file": "elis/taming kerberos notes/Ablauf.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "elis/lb1 Lernziele.md",
+                "file": "elis/taming kerberos notes/Ablauf.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +128,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "elis/lb1 Lernziele.md"
+                "file": "elis/taming kerberos notes/Ablauf.canvas"
               }
             }
           }
@@ -148,8 +151,14 @@
   },
   "active": "3b2ec4fcc9e459ca",
   "lastOpenFiles": [
-    "NullNUMMER24/README.md",
+    "elis/M159_Spicker_final.pdf",
+    "authentication server.md",
+    "elis/taming kerberos notes/Key Distribuition Center (KDC).md",
+    "elis/taming kerberos notes/Ablauf.canvas",
+    "elis/taming kerberos notes/Taming Kerberos Notes.md",
+    "elis/taming kerberos notes",
     "elis/lb1 Lernziele.md",
+    "NullNUMMER24/README.md",
     "NullNUMMER24/images/InstallattionKerberos-vmLS4-04.png",
     "NullNUMMER24/images/InstallattionKerberos-vmLS4-03.png",
     "NullNUMMER24/images/InstallattionKerberos-vmLS4-02.png",
@@ -165,7 +174,6 @@
     "gibbgschmüdder/lu5281qg09.tmp",
     "gibbgschmüdder/lu5281qfwu.tmp",
     "gibbgschmüdder/lu5281qehu.tmp",
-    "gibbgschmüdder/lu5281qdye.tmp",
-    "gibbgschmüdder/lu5281qd36.tmp"
+    "gibbgschmüdder/lu5281qdye.tmp"
   ]
 }
