@@ -6,7 +6,10 @@
 ## Lernziele 
 
 
-- Beschreiben können, was unter einem Directory Service verstanden wird und auf welchen Komponenten dieser Service basiert. Sie können auch Elemente einer nativen Kerberos-Infrastruktur in einer Microsoft ADDS-Infrastruktur identifizieren und benennen.
+>[!question] Du kannst
+>Beschreiben können, was unter einem Directory Service verstanden wird und auf welchen Komponenten dieser Service basiert. Sie können auch Elemente einer nativen Kerberos-Infrastruktur in einer Microsoft ADDS-Infrastruktur identifizieren und benennen.
+
+>[!success]
 
 
 
