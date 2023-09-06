@@ -33,4 +33,6 @@ mv /etc/samba/smb.conf /etc/samba/smb.conf.orig
 >```
 >vmls1.sam159.iet-gibb.ch
 >```
+>>[!tip] when accidently skipping the question, just run `sudo dpkg-reconfigure krb5-config
+`
 
