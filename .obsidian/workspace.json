@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NullNUMMER24/Teil2/Semesterplan.md",
+                "file": "NullNUMMER24/Teil2/README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NullNUMMER24/Teil2/Semesterplan.md",
+                "file": "NullNUMMER24/Teil2/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NullNUMMER24/Teil2/Semesterplan.md",
+                "file": "NullNUMMER24/Teil2/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NullNUMMER24/Teil2/Semesterplan.md"
+                "file": "NullNUMMER24/Teil2/README.md"
               }
             }
           }
@@ -149,34 +149,40 @@
   },
   "active": "3b2ec4fcc9e459ca",
   "lastOpenFiles": [
+    "NullNUMMER24/Teil2/README.md",
     "elis/lb2/Semesterplan.md",
     "elis/lb2",
     "VM Gateway warning.md",
-    "NullNUMMER24/Semesterplan.md",
     "NullNUMMER24/Teil2/Semesterplan.md",
     "NullNUMMER24/Teil2",
-    "NullNUMMER24/Teil1/M159-Teil1_AB02---gelöst.xlsx",
     "NullNUMMER24/Teil1/Testvorbereitung.md",
     "NullNUMMER24/Teil1/README.md",
+    "NullNUMMER24/Teil1/M159-Teil1_AB02---gelöst.xlsx",
     "NullNUMMER24/Teil1",
-    "Teil1",
-    "elis/M159_Spicker_final.pdf",
+    "elis/lb1/taming kerberos notes/Taming Kerberos Notes.md",
+    "elis/lb1/taming kerberos notes/Key Distribuition Center (KDC).md",
+    "elis/lb1/taming kerberos notes/Ablauf.canvas",
+    "elis/lb1/taming kerberos notes",
+    "elis/lb1/spicker_elis.docx.pdf",
+    "elis/lb1/spicker_elis.docx.odt",
+    "elis/lb1/lb1 Lernziele.md",
+    "elis/lb1/M159_Spicker_final.pdf",
+    "elis/lb1",
+    "elis",
     "authentication server.md",
+    "NullNUMMER24/Testvorbereitung.md",
+    "NullNUMMER24/README.md",
+    "NullNUMMER24/Semesterplan.md",
     "elis/taming kerberos notes/Key Distribuition Center (KDC).md",
     "elis/taming kerberos notes/Ablauf.canvas",
     "elis/taming kerberos notes/Taming Kerberos Notes.md",
-    "elis/taming kerberos notes",
     "elis/lb1 Lernziele.md",
-    "NullNUMMER24/README.md",
     "NullNUMMER24/images/InstallattionKerberos-vmLS4-04.png",
     "NullNUMMER24/images/InstallattionKerberos-vmLS4-03.png",
     "NullNUMMER24/images/InstallattionKerberos-vmLS4-02.png",
     "NullNUMMER24/images/InstallattionKerberos-vmLS4-01.png",
     "NullNUMMER24/images/HowKerberosV5Works.png",
     "NullNUMMER24/images/Kerberos.png",
-    "gibbgschmüdder/M159_Skript_Thema1_Kerberos_V2.6.pdf",
-    "NullNUMMER24/lu5822vvmz.tmp",
-    "NullNUMMER24/images/KerberosTabelle.png",
-    "NullNUMMER24/M159-Teil1_AB02---gelöst.xlsx"
+    "NullNUMMER24/images/KerberosTabelle.png"
   ]
 }
