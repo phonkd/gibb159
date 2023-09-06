@@ -9,7 +9,19 @@
 >[!question] Du kannst
 >Beschreiben können, was unter einem Directory Service verstanden wird und auf welchen Komponenten dieser Service basiert. Sie können auch Elemente einer nativen Kerberos-Infrastruktur in einer Microsoft ADDS-Infrastruktur identifizieren und benennen.
 
->[!success]
+>[!success] Capgpt
+>**Directory Service**: Ein Directory Service ist ein zentrales Repository oder eine Datenbank, die Informationen über Objekte in einem Netzwerk speichert und zur Verfügung stellt. Es ermöglicht Benutzern und Anwendungen, Informationen in einer strukturierten und organisierten Weise zu speichern und abzurufen. Das häufigste Beispiel für einen Directory Service ist Microsoft's Active Directory.
+>
+Komponenten eines Directory Service:
+>
+>1. **Datenbank**: Speichert Informationen über Netzwerkressourcen wie Benutzer, Computer, Drucker und andere Objekte.
+>2. **Schema**: Definiert die Art der in der Datenbank gespeicherten Objekte und die Attribute, die diese Objekte haben können.
+>3. **Verzeichnisdienst-Agent (DSA)**: Ein Softwareprozess, der auf einem Directory-Server läuft und Anfragen aus dem Netzwerk bedient.
+>4. **APIs**: Schnittstellen, die Entwicklern ermöglichen, Anwendungen zu schreiben, die mit dem Verzeichnisdienst interagieren.
+>5. **Replikation**: Ein Mechanismus, der sicherstellt, dass alle Kopien des Verzeichnisdienstes in einem Netzwerk synchron sind.
+>
+>**Native Kerberos-Elemente in Microsoft ADDS**: Kerberos ist ein Netzwerkauthentifizierungsprotokoll, das auf dem Prinzip der Tickets basiert. In einer Microsoft Active Directory Domain Services (ADDS)-Umgebung ist Kerberos das primäre Authentifizierungsprotokoll. Hier sind einige der nativen Kerberos-Komponenten in ADDS:
+
 
 
 
