@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NullNUMMER24/Teil2/Semesterplan.md",
+                "file": "elis/lb2/Konfiguration.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NullNUMMER24/Teil2/Semesterplan.md",
+                "file": "elis/lb2/Konfiguration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NullNUMMER24/Teil2/Semesterplan.md",
+                "file": "elis/lb2/Konfiguration.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NullNUMMER24/Teil2/Semesterplan.md"
+                "file": "elis/lb2/Konfiguration.md"
               }
             }
           }
@@ -149,11 +149,16 @@
   },
   "active": "3b2ec4fcc9e459ca",
   "lastOpenFiles": [
+    "VM Warning.md",
+    "NullNUMMER24/Teil2/Semesterplan.md",
+    "elis/lb2/Konfiguration.md",
+    "elis/lb2/configs_vmls1/hostname",
+    "elis/lb2/configs_vmls1/hosts",
+    "elis/lb2/configs_vmls1",
+    "elis/lb2/Ablauf.md",
     "elis/lb2/Semesterplan.md",
     "elis/lb2",
-    "VM Gateway warning.md",
     "NullNUMMER24/Semesterplan.md",
-    "NullNUMMER24/Teil2/Semesterplan.md",
     "NullNUMMER24/Teil2",
     "NullNUMMER24/Teil1/M159-Teil1_AB02---gelöst.xlsx",
     "NullNUMMER24/Teil1/Testvorbereitung.md",
@@ -174,9 +179,6 @@
     "NullNUMMER24/images/InstallattionKerberos-vmLS4-01.png",
     "NullNUMMER24/images/HowKerberosV5Works.png",
     "NullNUMMER24/images/Kerberos.png",
-    "gibbgschmüdder/M159_Skript_Thema1_Kerberos_V2.6.pdf",
-    "NullNUMMER24/lu5822vvmz.tmp",
-    "NullNUMMER24/images/KerberosTabelle.png",
-    "NullNUMMER24/M159-Teil1_AB02---gelöst.xlsx"
+    "NullNUMMER24/images/KerberosTabelle.png"
   ]
 }
