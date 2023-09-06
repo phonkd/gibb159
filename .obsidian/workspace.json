@@ -11,9 +11,11 @@
             "id": "3b2ec4fcc9e459ca",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-
+                "file": "NullNUMMER24/Teil2/Semesterplan.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "elis/taming kerberos notes/Ablauf.canvas",
+                "file": "NullNUMMER24/Teil2/Semesterplan.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "elis/taming kerberos notes/Ablauf.canvas",
+                "file": "NullNUMMER24/Teil2/Semesterplan.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "elis/taming kerberos notes/Ablauf.canvas"
+                "file": "NullNUMMER24/Teil2/Semesterplan.md"
               }
             }
           }
@@ -136,6 +138,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -146,6 +149,14 @@
   },
   "active": "3b2ec4fcc9e459ca",
   "lastOpenFiles": [
+    "NullNUMMER24/Semesterplan.md",
+    "NullNUMMER24/Teil2/Semesterplan.md",
+    "NullNUMMER24/Teil2",
+    "NullNUMMER24/Teil1/M159-Teil1_AB02---gelöst.xlsx",
+    "NullNUMMER24/Teil1/Testvorbereitung.md",
+    "NullNUMMER24/Teil1/README.md",
+    "NullNUMMER24/Teil1",
+    "Teil1",
     "elis/M159_Spicker_final.pdf",
     "authentication server.md",
     "elis/taming kerberos notes/Key Distribuition Center (KDC).md",
@@ -164,11 +175,6 @@
     "NullNUMMER24/lu5822vvmz.tmp",
     "NullNUMMER24/images/KerberosTabelle.png",
     "NullNUMMER24/M159-Teil1_AB02---gelöst.xlsx",
-    "NullNUMMER24/lu5281qg8o.tmp",
-    "gibbgschmüdder/lu5281qg8l.tmp",
-    "gibbgschmüdder/lu5281qg09.tmp",
-    "gibbgschmüdder/lu5281qfwu.tmp",
-    "gibbgschmüdder/lu5281qehu.tmp",
-    "gibbgschmüdder/lu5281qdye.tmp"
+    "NullNUMMER24/lu5281qg8o.tmp"
   ]
 }
