@@ -11,9 +11,11 @@
             "id": "3b2ec4fcc9e459ca",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-
+                "file": "elis/lb2/Semesterplan.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "elis/taming kerberos notes/Ablauf.canvas",
+                "file": "elis/lb2/Semesterplan.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "elis/taming kerberos notes/Ablauf.canvas",
+                "file": "elis/lb2/Semesterplan.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "elis/taming kerberos notes/Ablauf.canvas"
+                "file": "elis/lb2/Semesterplan.md"
               }
             }
           }
@@ -141,11 +143,17 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
   "active": "3b2ec4fcc9e459ca",
   "lastOpenFiles": [
+    "NullNUMMER24/Testvorbereitung.md",
+    "VM Gateway warning.md",
+    "elis/lb2/Semesterplan.md",
+    "LB2",
+    "elis/lb2",
     "elis/M159_Spicker_final.pdf",
     "authentication server.md",
     "elis/taming kerberos notes/Key Distribuition Center (KDC).md",
@@ -166,9 +174,6 @@
     "NullNUMMER24/M159-Teil1_AB02---gelöst.xlsx",
     "NullNUMMER24/lu5281qg8o.tmp",
     "gibbgschmüdder/lu5281qg8l.tmp",
-    "gibbgschmüdder/lu5281qg09.tmp",
-    "gibbgschmüdder/lu5281qfwu.tmp",
-    "gibbgschmüdder/lu5281qehu.tmp",
-    "gibbgschmüdder/lu5281qdye.tmp"
+    "gibbgschmüdder/lu5281qg09.tmp"
   ]
 }
