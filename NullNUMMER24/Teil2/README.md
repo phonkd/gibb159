@@ -68,9 +68,9 @@ Server Role: **dc**
 DNS backend: **SAMBA_INTERNAL**
 DNS forwarder IP: **8.8.8.8**
 Administrator password: __SmL12345**__
-![[samba-tool-domain-provision.png]]
+![samba-tool-domain-provision](ressouces/samba-tool-domain-provision.png)
 Wurde alles Korrekt konfiguriert, so sollte der Output in etwa so aussehen:
-![[samba-tool-domain-provision-ergebnis.png]]
+![samba-tool-domain-provision-ergebnis](ressouces/samba-tool-domain-provision-ergebnis.png)
 ##### DNS-Resolver 
 Da der DNS jetz von Samba zur Verfügung gestellt wird, muss der DNS-Resolver deaktiviert werden:
 ```Bash
@@ -106,7 +106,7 @@ reboot
 systemctl status samba-ad-dc
 ```
 Der Output sollte so aussehen:
-![[SambaAutostartOutput.png]]
+![SambaAutostartOutput](ressouces/SambaAutostartOutput.png)
 ##### krb5.conf löschen
 ```Bash
 sudo rm /etc/krb5.conf
@@ -138,7 +138,7 @@ systemctl start systemd-resolved
 systemctl status systemd-resolved
 resolvectl status
 ```
-![[DNS-Server-anzeigen-lassen.png]]
+![DNS-Server-anzeigen-lassen](ressouces/DNS-Server-anzeigen-lassen.png)
 ##### Resolver-Service ausschalten
 Dach dem der DNS-Server angezeigt wurde, muss der Resolver-Service wieder ausgeschaltet werden.
 ```Bash
@@ -150,4 +150,4 @@ Danach muss das System neu gestartet werden.
 reboot
 ```
 ##### Aktive Ports anzeigen lassen
-![[netstat-tlpn.png]]
+![netstat-tlpn](ressouces/netstat-tlpn.png)
