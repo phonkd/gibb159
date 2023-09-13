@@ -1,1 +1,11 @@
-{}
+{
+  "terminal:open-terminal.external.root": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "Enter"
+    }
+  ],
+  "editor:follow-link": []
+}

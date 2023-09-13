@@ -1,6 +1,7 @@
 ***
 >[!warning]
->All VM's must have the same Gateway set to `192.168.110.2`
+>All VM's must have the same Gateway set to `192.168.110.2`.
+>Also set the `DNS server` to `192.168.110.2`
 
 >[!info] IPS:
 
@@ -27,7 +28,7 @@
 
 
 >[!warning] Search domain im netplan file
->`sam159.iet-gibb.ch
+>`sam159.iet-gibb.ch`
 
 
 ## Howto
