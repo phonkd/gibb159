@@ -313,7 +313,41 @@ Folgendes muss eingestellt werden:
 - Default Language: **Deutsch**
 - Time zone: **Europe/Zurich**
 - List of valid user: **cn=Administrator,cn=users,dc=sam159,dc=iet-gibb,dc=ch**
+### LAM-Account Types definieren
+Unter `Account types` --> `Users`, `Groups` und `Hosts` jeweils den LDAP suffix "**dc=sam159,dc=iet-gibb,dc=ch**" und unter `Module settings`:  Windows Domains: **sam159.iet-gibb.ch**.
+![LAM-AccountTypesDefinieren](ressouces/LAM-AccountTypesDefinieren.png)
+Nun kann man sich sich am LAM mit dem Domainadministrator anmelden.
+#### $\text{\color{red}{\Huge  Wichtig!}}$ 
+Damit die Verbindung funktioniert, muss in der `smb.conf` noch etwas angepasst werden.
+```Bash
+sudo nvim /etc/samba/smb.conf
+```
+Das File sollte dann in etwa so aussehen:
+```Bash
+# Global parameters
+[global]
+        dns forwarder = 8.8.8.8
+        netbios name = VMLS1
+        realm = SAM159.IET-GIBB.CH
+        server role = active directory domain controller
+        workgroup = SAM159
+        ldap server require strong auth = no
 
+[sysvol]
+        path = /var/lib/samba/sysvol
+        read only = No
+
+[netlogon]
+        path = /var/lib/samba/sysvol/sam159.iet-gibb.ch/scripts
+        read only = No
+```
+![ldapServerRequireStrongAuthFalse](ressouces/ldapServerRequireStrongAuthFalse.png)
+Danach kann man sich anmelden.
+### LAM Administrator Login
+![LAMAdministratorLogin](ressouces/LAMAdministratorLogin.png)
+Bei mir war das Server profile nicht auf **sam159Domain** gestellt, was ich noch ändern musste. Danach musste ich beim **Username Dropdown** noch den **Administrator** Account auswählen. Das Passwort ist auch hier __Sml12345**__. 
+## Aufgaben
+### Neuen User im LDAP anlegen + TGT lösen
 
 
 - User --> Administrator
