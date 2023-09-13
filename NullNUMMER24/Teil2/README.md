@@ -32,7 +32,23 @@ Folgende VM's werden dafür verwendet:
 ## Vorbereitung des Domain Controllers / KDC
 ### Samba Doamin Controller vmLS1 installieren
 #### 1. Netzwerk konfigurieren
-Dieser ganze Punkt kann übersprungen werden, da SmartLearn online verwendet wird. 
+##### Netplan
+```Bash
+network:
+  ethernets:
+    eth0:
+      addresses:
+      - 192.168.110.61/24
+      nameservers:
+        addresses:
+        - 192.168.110.2
+        search:
+        - sam159.iet-gibb.ch
+      routes:
+      - to: default
+        via: 192.168.110.2
+  version: 2
+```
 #### 2. Rechner Updaten
 ```Bash
 sudo apt update && sudo apt upgrade
@@ -150,4 +166,19 @@ Danach muss das System neu gestartet werden.
 reboot
 ```
 ##### Aktive Ports anzeigen lassen
+```Bash
+ntestat -tlpn
+```
 ![netstat-tlpn](ressouces/netstat-tlpn.png)
+##### Internen DNS aktualisieren
+```Bash
+samba_dnsupdate --verbose
+```
+##### DNS testen
+
+| Test                                            | Ergebnis                                                                              |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------- |
+| `host -t SRV _kerberos._tcp.sam159.iet-gibb.ch` | `_kerberos._tcp.sam159.iet-gibb.ch has SRV record 0 100 88 vmls1.sam159.iet-gibb.ch.` |
+| `host -t SRV _gc._tcp.sam159.iet-gibb.ch`       | `_gc._tcp.sam159.iet-gibb.ch has SRV record 0 100 3268 vmls1.sam159.iet-gibb.ch.`     |
+| `host -t SRV _ldap._tcp.sam159.iet-gibb.ch`     | `_ldap._tcp.sam159.iet-gibb.ch has SRV record 0 100 389 vmls1.sam159.iet-gibb.ch.`    |
+| `host -t A vmls1.sam159.iet-gibb.ch`            | `host -t A vmls1.sam159.iet-gibb.ch`                                                  | 
