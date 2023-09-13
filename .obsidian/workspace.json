@@ -159,6 +159,9 @@
   },
   "active": "3b2ec4fcc9e459ca",
   "lastOpenFiles": [
+    "NullNUMMER24/Teil2/ressouces/PasswortKomplexitätDeaktivieren.png",
+    "NullNUMMER24/Teil2/ressouces/LookupZoneVmLS1.png",
+    "NullNUMMER24/Teil2/ressouces/CreateLookupZone.png",
     "NullNUMMER24/Teil2/README.md",
     "NullNUMMER24/Teil2/ressouces/netstat-tlpn.png",
     "NullNUMMER24/Teil2/ressouces/DNS-Server-anzeigen-lassen.png",
@@ -194,8 +197,6 @@
     "elis/lb1 Lernziele.md",
     "NullNUMMER24/images/InstallattionKerberos-vmLS4-04.png",
     "NullNUMMER24/images/InstallattionKerberos-vmLS4-03.png",
-    "NullNUMMER24/images/InstallattionKerberos-vmLS4-02.png",
-    "NullNUMMER24/images/InstallattionKerberos-vmLS4-01.png",
-    "NullNUMMER24/images/HowKerberosV5Works.png"
+    "NullNUMMER24/images/InstallattionKerberos-vmLS4-02.png"
   ]
 }

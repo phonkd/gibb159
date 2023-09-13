@@ -181,4 +181,109 @@ samba_dnsupdate --verbose
 | `host -t SRV _kerberos._tcp.sam159.iet-gibb.ch` | `_kerberos._tcp.sam159.iet-gibb.ch has SRV record 0 100 88 vmls1.sam159.iet-gibb.ch.` |
 | `host -t SRV _gc._tcp.sam159.iet-gibb.ch`       | `_gc._tcp.sam159.iet-gibb.ch has SRV record 0 100 3268 vmls1.sam159.iet-gibb.ch.`     |
 | `host -t SRV _ldap._tcp.sam159.iet-gibb.ch`     | `_ldap._tcp.sam159.iet-gibb.ch has SRV record 0 100 389 vmls1.sam159.iet-gibb.ch.`    |
-| `host -t A vmls1.sam159.iet-gibb.ch`            | `host -t A vmls1.sam159.iet-gibb.ch`                                                  | 
+| `host -t A vmls1.sam159.iet-gibb.ch`            | `vmls1.sam159.iet-gibb.ch has address 192.168.110.61`                                                  | 
+
+#### Reverse-Lookup-Zone einrichten
+##### Zone einrichten
+```Bash
+samba-tool dns zonecreate vmLS1 110.168.192.in-addr.arpa -Uadministrator
+```
+Danach wird man nach dem Passwort gefragt. In meinem Fall ist dies: **Sml12345**
+![CreateLookupZone](ressouces/CreateLookupZone.png)
+##### Zone für vmLS1 eintragen
+```Bash
+samba-tool dns add 192.168.110.61 110.168.192.in-addr.arpa 61 PTR vmls1.sam159.iet-gibb.ch -Uadministrator
+```
+![LookupZoneVmLS1](ressouces/LookupZoneVmLS1.png)
+####  A- und PTR-Records eintragen
+##### A-Record für vmls2
+```Bash
+samba-tool dns add vmLS1.sam159.iet-gibb.ch sam159.iet-gibb.ch vmLS2 A 192.168.110.62 -U administrator
+```
+##### A-Record für vmlp1
+```Bash
+samba-tool dns add vmLS1.sam159.iet-gibb.ch sam159.iet-gibb.ch vmLP1 A 192.168.110.30 -U administrator
+```
+##### Pointer-Record in Reverse-Zone für vmlp1
+```Bash
+samba-tool dns add vmLS1.sam159.iet-gibb.ch 110.168.192.in-addr.arpa 30 PTR vmLP1.sam159.iet -U administrator
+```
+##### Pointer-Record in Reverse-Zone für vmls2
+```Bash
+samba-tool dns add vmLS1.sam159.iet-gibb.ch 110.168.192.in-addr.arpa 62 PTR vmLS2.sam159.iet -U administrator
+```
+#### Testen der Verbindung
+- ping vmLP1
+- ping vmLS2
+- ping vmls1
+- smbclient
+- reverselookup
+
+#### Aufgaben
+##### Portnummern
+
+| Port | Verwendung |
+| ---- | ---------- |
+| 445  | 804/smbd   |
+| 389  | 811/samba  |
+| 636  | 811/samba  |
+| 88   | 818/samba  |
+| 53   | 842/samba  | 
+##### Ticket für Admin lösen
+```Bash
+kinit administrator
+```
+Danach muss noch das Passwort des Admins eingegeben werden (__Sml12345**__)
+##### Verbindung testen
+```Bash
+smbclient -N --use-kerberos = required -L vmLS1
+```
+##### Wie sieht die Credential Cache aus
+Der Credential Cache kann mit `klist` ausgegeben werden. 
+```
+Ticket cache: FILE:/tmp/krb5cc_1000
+Default principal: administrator@SAM159.IET-GIBB.CH
+
+Valid starting       Expires              Service principal
+09/13/2023 11:35:13  09/13/2023 21:35:13  krbtgt/SAM159.IET-GIBB.CH@SAM159.IET-GIBB.CH
+	renew until 09/14/2023 11:34:57
+```
+##### Warum funktioniert der Verbindungsaufbau mit localhost nicht
+`smbclient -L localhost -k` funktioniert nicht, da localhost kein Kerberos Principal ist. Siehe Fehlermeldung:
+```
+WARNING: The option -k|--kerberos is deprecated!
+Kerberos auth with 'administrator@SAM159.IET-GIBB.CH' (SAM159\vmadmin) to access 'localhost' not possible
+session setup failed: NT_STATUS_ACCESS_DENIED
+```
+##### Passwort-Komplexität deaktivieren
+```Bash
+samba-tool domain passwordsettings set --complexity=off
+samba-tool domain passwordsettings set --history-lengt=0
+samba-tool domain passwordsettings set --min-pwd-age=0
+samba-tool domain passwordsettings set --max-pwd-age=0
+samba-tool user setexpiry administrator --noexpiry
+```
+![PasswortKomplexitätDeaktivieren](ressouces/PasswortKomplexitätDeaktivieren.png)
+##### A Records mit samba-tool hinzufügen
+```bash
+samba-tool dns add vmls1.sam159.iet-gibb.ch sam159.iet-gibb.ch vmls2 A 192.168.220.11 -Uadministrator
+samba-tool dns add vmls1.sam159.iet-gibb.ch sam159.iet-gibb.ch vmlp1 A 192.168.210.30 -Uadministrator
+```
+##### PTR Records hinzufügen
+```Bash
+samba-tool dns add vmls1.sam159.iet-gibb.ch 220.168.192.in-addr.arpa vmls2 PTR 11 -Uadministrator
+```
+##### Was zeigt samba-tool fsmo show
+```
+SchemaMasterRole owner: CN=NTDS Settings,CN=VMLS1,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=sam159,DC=iet-gibb,DC=ch
+InfrastructureMasterRole owner: CN=NTDS Settings,CN=VMLS1,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=sam159,DC=iet-gibb,DC=ch
+RidAllocationMasterRole owner: CN=NTDS Settings,CN=VMLS1,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=sam159,DC=iet-gibb,DC=ch
+PdcEmulationMasterRole owner: CN=NTDS Settings,CN=VMLS1,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=sam159,DC=iet-gibb,DC=ch
+DomainNamingMasterRole owner: CN=NTDS Settings,CN=VMLS1,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=sam159,DC=iet-gibb,DC=ch
+DomainDnsZonesMasterRole owner: CN=NTDS Settings,CN=VMLS1,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=sam159,DC=iet-gibb,DC=ch
+ForestDnsZonesMasterRole owner: CN=NTDS Settings,CN=VMLS1,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=sam159,DC=iet-gibb,DC=ch
+```
+# Arbeitsblatt 2
+
+
+
