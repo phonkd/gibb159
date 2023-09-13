@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "elis/lb2/Konfiguration.md",
+                "file": "elis/lb2/kw37/kw37.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "28ab4b58d6e6b9e0",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "elis/lb2/Konfiguration.md",
+                "file": "elis/lb2/kw37/kw37.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "elis/lb2/Konfiguration.md",
+                "file": "elis/lb2/kw37/kw37.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "elis/lb2/Konfiguration.md"
+                "file": "elis/lb2/kw37/kw37.md"
               }
             }
           }
@@ -150,13 +149,15 @@
   },
   "active": "3b2ec4fcc9e459ca",
   "lastOpenFiles": [
+    "elis/lb2/Ablauf.md",
+    "elis/lb2/kw37/kw37.md",
+    "elis/lb2/kw37",
+    "elis/lb2/Konfiguration.md",
     "VM Warning.md",
     "NullNUMMER24/Teil2/Semesterplan.md",
-    "elis/lb2/Konfiguration.md",
     "elis/lb2/configs_vmls1/hostname",
     "elis/lb2/configs_vmls1/hosts",
     "elis/lb2/configs_vmls1",
-    "elis/lb2/Ablauf.md",
     "elis/lb2/Semesterplan.md",
     "elis/lb2",
     "NullNUMMER24/Semesterplan.md",
@@ -171,7 +172,6 @@
     "elis/taming kerberos notes/Key Distribuition Center (KDC).md",
     "elis/taming kerberos notes/Ablauf.canvas",
     "elis/taming kerberos notes/Taming Kerberos Notes.md",
-    "elis/taming kerberos notes",
     "elis/lb1 Lernziele.md",
     "NullNUMMER24/README.md",
     "NullNUMMER24/images/InstallattionKerberos-vmLS4-04.png",
