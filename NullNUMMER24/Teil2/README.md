@@ -284,6 +284,40 @@ DomainDnsZonesMasterRole owner: CN=NTDS Settings,CN=VMLS1,CN=Servers,CN=Default-
 ForestDnsZonesMasterRole owner: CN=NTDS Settings,CN=VMLS1,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=sam159,DC=iet-gibb,DC=ch
 ```
 # Arbeitsblatt 2
+## Lernziele
+- Installation und Konfiguration des LDAP Access Managers (LAM)
+- Übersicht der Objekte eines AD mit der LDAP-Brille
+- Anlegen eines Users und Hinzufügen in eine Gruppe
+- TGT für neu erstellten User beziehen und Testverbindung herstellen
+## Installation und Konfiguration LAM
+Um den LDAP-Dienst zu testen müssen die ldap-tools und der LAM (LDAP-Account-Manager) noch installiert werden.
+```Bash
+sudo apt-get install smbldap-tools
+sudo apt install ldap-account-manager
+```
+Mit dem Browser auf den LAM verbinden: http://100.114.67.130/lam/.
+### Default Profil erstellen
+Um ein neues Profil zu erstellen muss man recht oben auf `LAM configuration` klicken.
+![LAMFirtLogInScreen](ressouces/LAMFirtLogInScreen.png)
+Hier kann man `Edit server profiles` --> `Manage server profiles` auswählen. Nun muss kann man das neue Profil konfigurieren. 
+Das neue Profil hat folgende Angaben:
+- Profile name: sam159Domain
+- ProfilePassword: sml12345
+- Template: windows_samba4
+![CreateNewProfileLAM](ressouces/CreateNewProfileLAM.png)
+Danach wird man noch nach dem Master password gefragt. Das Master Passwort ist **lam**.
+### LAM-General Settings definieren
+Folgendes muss eingestellt werden:
+- Server address: ldap://vmls1.sam159.iet-gibb.ch
+- Tree suffix: **dc=sam159,dc=iet-gibb,dc=ch**
+- Default Language: **Deutsch**
+- Time zone: **Europe/Zurich**
+- List of valid user: **cn=Administrator,cn=users,dc=sam159,dc=iet-gibb,dc=ch**
+
+
+
+- User --> Administrator
+- Passwort --> SmL12345**
 
 
 

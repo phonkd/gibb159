@@ -159,10 +159,13 @@
   },
   "active": "3b2ec4fcc9e459ca",
   "lastOpenFiles": [
+    "Untitled.md",
+    "NullNUMMER24/Teil2/README.md",
+    "NullNUMMER24/Teil2/ressouces/CreateNewProfileLAM.png",
+    "NullNUMMER24/Teil2/ressouces/LAMFirtLogInScreen.png",
     "NullNUMMER24/Teil2/ressouces/PasswortKomplexitätDeaktivieren.png",
     "NullNUMMER24/Teil2/ressouces/LookupZoneVmLS1.png",
     "NullNUMMER24/Teil2/ressouces/CreateLookupZone.png",
-    "NullNUMMER24/Teil2/README.md",
     "NullNUMMER24/Teil2/ressouces/netstat-tlpn.png",
     "NullNUMMER24/Teil2/ressouces/DNS-Server-anzeigen-lassen.png",
     "NullNUMMER24/Teil2/ressouces/SambaAutostartOutput.png",
@@ -194,9 +197,6 @@
     "elis/taming kerberos notes/Key Distribuition Center (KDC).md",
     "elis/taming kerberos notes/Ablauf.canvas",
     "elis/taming kerberos notes/Taming Kerberos Notes.md",
-    "elis/lb1 Lernziele.md",
-    "NullNUMMER24/images/InstallattionKerberos-vmLS4-04.png",
-    "NullNUMMER24/images/InstallattionKerberos-vmLS4-03.png",
-    "NullNUMMER24/images/InstallattionKerberos-vmLS4-02.png"
+    "elis/lb1 Lernziele.md"
   ]
 }
