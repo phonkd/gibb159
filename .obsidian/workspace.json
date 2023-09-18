@@ -6,7 +6,6 @@
       {
         "id": "706b76c2b5881a1d",
         "type": "tabs",
-        "dimension": 46.319569120287255,
         "children": [
           {
             "id": "3b2ec4fcc9e459ca",
@@ -14,14 +13,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "elis/lb2/fkit/AB01.md",
+                "file": "elis/lb2/fkit/AB02.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "32018e4e1abedd8d",
+            "id": "1c88314ae6a25543",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -29,23 +28,6 @@
                 "file": "VM Warning.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "82315a3132f2f00f",
-        "type": "tabs",
-        "dimension": 53.680430879712745,
-        "children": [
-          {
-            "id": "6eeed0bc5408de0c",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "elis/lb2/fkit/M159Thema2-AB01_V1.1.pdf"
               }
             }
           }
@@ -99,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 333.5
+    "width": 333.5,
+    "collapsed": true
   },
   "right": {
     "id": "28ab4b58d6e6b9e0",
@@ -115,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "elis/lb2/fkit/AB01.md",
+                "file": "elis/lb2/fkit/AB02.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "elis/lb2/fkit/AB01.md",
+                "file": "elis/lb2/fkit/AB02.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -155,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "elis/lb2/fkit/AB01.md"
+                "file": "elis/lb2/fkit/AB02.md"
               }
             }
           },
@@ -184,42 +167,43 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "terminal:Open terminal": false
+      "command-palette:Open command palette": false
     }
   },
   "active": "3b2ec4fcc9e459ca",
   "lastOpenFiles": [
-    "elis/lb2/fkit/attachments/Pasted image 20230918173044.png",
-    "elis/lb2/fkit/attachments/Pasted image 20230918172520.png",
-    "elis/lb2/fkit/attachments/Pasted image 20230918172117.png",
-    "elis/lb2/fkit/M159Thema2-AB01_V1.1.pdf",
+    "elis/lb2/fkit/attachments/Pasted image 20230918225809.png",
+    "elis/lb2/fkit/attachments/Pasted image 20230918225651.png",
+    "elis/lb2/fkit/attachments/M159Thema2-AB02.pdf",
+    "elis/lb2/fkit/AB02.md",
+    "elis/lb2/fkit/attachments/wtf-png.png",
+    "elis/lb2/fkit/attachments/Pasted image 20230918223712.png",
+    "elis/lb2/fkit/attachments/Pasted image 20230918223353.png",
+    "elis/lb2/fkit/attachments/Pasted image 20230918223142.png",
+    "elis/lb2/fkit/attachments/Pasted image 20230918222548.png",
+    "elis/lb2/fkit/attachments/Pasted image 20230918222309.png",
+    "elis/lb2/fkit/attachments/Pasted image 20230918222244.png",
+    "elis/lb2/fkit/attachments/Pasted image 20230918222125.png",
+    "elis/lb2/fkit/attachments/Pasted image 20230918222112.png",
     "elis/lb2/fkit/AB01.md",
-    "elis/lb2/fkit/attachments/Pasted image 20230918171121.png",
-    "elis/lb2/fkit/attachments/Pasted image 20230918170237.png",
-    "elis/lb2/fkit/attachments/Pasted image 20230918170225.png",
-    "elis/lb2/Ablauf.md",
-    "elis/lb2/kw37/kw37.md",
-    "elis/lb2/kw37/AB03 Note.md",
     "VM Warning.md",
+    "elis/lb2/Ablauf.md",
+    "elis/lb2/fkit/attachments/M159Thema2-AB01_V1.1.pdf",
+    "elis/lb2/kw37/kw37.md",
+    "elis/lb2/KW36/Konfiguration (AB01).md",
+    "Untitled.md",
+    "elis/lb2/kw37/AB03 Note.md",
     "authentication server.md",
     "elis/lb2/fkit/VM preparation.md",
-    "elis/lb2/fkit/attachments/Pasted image 20230918163058.png",
-    "elis/lb2/fkit/attachments/Pasted image 20230918162608.png",
-    "elis/lb2/fkit/attachments/Pasted image 20230918155918.png",
-    "elis/lb2/fkit/attachments/Pasted image 20230918155754.png",
-    "elis/lb2/fkit/attachments/Pasted image 20230918155656.png",
     "elis/lb2/fkit/attachments",
     "Pasted image 20230918155107.png.md",
     "elis/lb2/kw37/M159Thema2-AB01_V1.1.pdf",
     "elis/lb2/fkit",
-    "elis/lb2/KW36/Konfiguration (AB01).md",
     "elis/lb2/kw37/M159Thema2-AB03.pdf",
     "elis/lb2/kw37/M159Thema2-AB02.pdf",
     "elis/lb2/kw37/M159Thema2-AB01.pdf",
     "elis/lb2/configs_vmls1/00-eth0.yaml",
     "elis/lb2/KW36",
-    "elis/lb2/kw37/M159Thema2-AB05.pdf",
     "NullNUMMER24/Teil2/Semesterplan.md",
     "elis/lb2/Semesterplan.md",
     "NullNUMMER24/Semesterplan.md",
