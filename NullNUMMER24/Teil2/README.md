@@ -5,8 +5,6 @@
 - Search Doamin im netplan-yaml: sam159.iet-gibb.ch
 Arbeitsblatt 3
 - Update und Upgrade sollte unbedingt ausgeführt werden. 
-# Mein Setup
-Ich habe Tailscale auf meinem Client, sowie auf dem vmLP1 installiert. Somit muss ich VMWareworkstation nicht mehr verwenden. 
 # Arbeitsblatt 1
 ## Lernziele
 - Verwaltung eines ADDS mit Samba
@@ -94,6 +92,11 @@ sudo systemctl disable systemd-resolved
 sudo systemctl stop systemd-resolved
 rm /etc/resolv.conf
 ```
+Nun muss noch ein neues file unter `/etc/resolv.conf` erstellt werden. Der Inhalt dieses Files sollte in etwa so aussehen:
+```config
+nameserver 192.168.110.61
+search sam159.iet-gibb.ch
+```
 ##### Neues /etc/resolv.conf erstellen
 ```Bash
 # Global parameters
@@ -167,7 +170,7 @@ reboot
 ```
 ##### Aktive Ports anzeigen lassen
 ```Bash
-ntestat -tlpn
+netstat -tlpn
 ```
 ![netstat-tlpn](ressouces/netstat-tlpn.png)
 ##### Internen DNS aktualisieren
@@ -236,7 +239,7 @@ kinit administrator
 Danach muss noch das Passwort des Admins eingegeben werden (__Sml12345**__)
 ##### Verbindung testen
 ```Bash
-smbclient -N --use-kerberos = required -L vmLS1
+smbclient -N --use-kerberos required -L vmLS1
 ```
 ##### Wie sieht die Credential Cache aus
 Der Credential Cache kann mit `klist` ausgegeben werden. 
@@ -302,7 +305,7 @@ Um ein neues Profil zu erstellen muss man recht oben auf `LAM configuration` kli
 Hier kann man `Edit server profiles` --> `Manage server profiles` auswählen. Nun muss kann man das neue Profil konfigurieren. 
 Das neue Profil hat folgende Angaben:
 - Profile name: sam159Domain
-- ProfilePassword: sml12345
+- ProfilePassword: SmL12345**
 - Template: windows_samba4
 ![CreateNewProfileLAM](ressouces/CreateNewProfileLAM.png)
 Danach wird man noch nach dem Master password gefragt. Das Master Passwort ist **lam**.
@@ -314,9 +317,9 @@ Folgendes muss eingestellt werden:
 - Time zone: **Europe/Zurich**
 - List of valid user: **cn=Administrator,cn=users,dc=sam159,dc=iet-gibb,dc=ch**
 ### LAM-Account Types definieren
-Unter `Account types` --> `Users`, `Groups` und `Hosts` jeweils den LDAP suffix "**dc=sam159,dc=iet-gibb,dc=ch**" und unter `Module settings`:  Windows Domains: **sam159.iet-gibb.ch**.
+Unter `Account types` --> `Users`, `Groups` und `Hosts` jeweils den LDAP suffix "**dc=sam159,dc=iet-gibb,dc=ch**" und unter `Module settings`:  `Windows`-->`Domains`: **sam159.iet-gibb.ch**.
 ![LAM-AccountTypesDefinieren](ressouces/LAM-AccountTypesDefinieren.png)
-Nun kann man sich sich am LAM mit dem Domainadministrator anmelden.
+Bevor man sich jetzt anmelden kann, muss man noch den nächsten Schritt ausführen.
 #### $\text{\color{red}{\Huge  Wichtig!}}$ 
 Damit die Verbindung funktioniert, muss in der `smb.conf` noch etwas angepasst werden.
 ```Bash
@@ -345,13 +348,31 @@ Das File sollte dann in etwa so aussehen:
 Danach kann man sich anmelden.
 ### LAM Administrator Login
 ![LAMAdministratorLogin](ressouces/LAMAdministratorLogin.png)
-Bei mir war das Server profile nicht auf **sam159Domain** gestellt, was ich noch ändern musste. Danach musste ich beim **Username Dropdown** noch den **Administrator** Account auswählen. Das Passwort ist auch hier __Sml12345**__. 
+Bei mir war das Server profile nicht auf **sam159Domain** gestellt, was ich noch ändern musste. Danach musste ich beim **Username Dropdown** noch den **Administrator** Account auswählen. Das Passwort ist auch hier __SmL12345**__. 
+Nun sollte die Webseite so aussehen:
+![LAM_AfterLogIn](ressouces/LAM_AfterLogIn.png)
+#### Tree View
+Um alle Objekte des AD zu sehen kann die Tree View verwendet werden. Dies ist unter `Tools` -->`Tree View` zu finden und ist nicht mehr im Dashboard. (AB02 veraltet).
+
 ## Aufgaben
 ### Neuen User im LDAP anlegen + TGT lösen
-
-
-- User --> Administrator
-- Passwort --> SmL12345**
+#### Benutzer anlegen
+Um einen neuen User anzulegen, kann man im Dashboard einfach auf " + NEW User" klicken. Nun kann man alles nötige eintragen:
+User name: Jamie
+Password: SmL12345**
+![create-user_LAM](ressouces/create-user_LAM.png)
+#### Benutzer der Admin Gruppe hinzufügen
+Dazu kann unter dem Tab `Groups` die Gruppe `Domain Admins` ausgewählt werden. In den Goupsettings kann nun unter `Goup members` --> `Edit`-->`Users`-->`Ok`-->`Jamie` -->`Add`. Nun sollte man unter `Group members` folgende Einträge sehen:
+```
+Jamie > sam159 > iet-gibb > ch
+Administrator > Users > sam159 > iet-gibb > ch
+```
+#### Wie lautet der _destinguishedName_ des Benutzers
+Mann kann den DN des Users in der **Tree View** anzeigen lassen. Da es sich um ein AD-Objekt handelt, kann man den User hier finden. Wenn man auf den User klickt, und auf search klickt, sieht man recht einiges eingeblendet. Unter andrem sieht man hier auch den DN. Der DN meines Jamie Users lautet: `CN=Jamie,DC=sam159,DC=iet-gibb,DC=ch` 
+![DN_from_User](ressouces/DN_from_User.png)
+#### Wie lautet der _destinguishedName_ der Gruppe **Domain Admins** 
+Wie schon bei dem User ist die Gruppe unter **Tree View** zu finden. Jedoch ist sie etwas versteckt. Die Gruppe ist unter `CN=Users` --> `CN=Domain Admins` zu finden. Der DN lautet hier: `CN=Domain Admins,CN=Users,DC=sam159,DC=iet-gibb,DC=ch`
+#### Ein TGT für den User lösen
 
 
 

@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "706b76c2b5881a1d",
+        "id": "1ac9b64cb4dfe66f",
         "type": "tabs",
         "children": [
           {
-            "id": "3b2ec4fcc9e459ca",
+            "id": "7d833b709af2f957",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "NullNUMMER24/Teil2/README.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -69,7 +65,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "28ab4b58d6e6b9e0",
@@ -85,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NullNUMMER24/Teil2/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NullNUMMER24/Teil2/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "NullNUMMER24/Teil2/README.md"
-              }
+              "state": {}
             }
           },
           {
@@ -156,14 +149,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3b2ec4fcc9e459ca",
+  "active": "7d833b709af2f957",
   "lastOpenFiles": [
+    "NullNUMMER24/Teil2/README.md",
+    "NullNUMMER24/Teil2/ressouces/DN_from_User.png",
+    "NullNUMMER24/Teil2/ressouces/create-user_LAM.png",
+    "NullNUMMER24/Teil2/ressouces/LAM_AfterLogIn.png",
     "NullNUMMER24/Teil2/ressouces/LAMAdministratorLogin.png",
     "NullNUMMER24/Teil2/ressouces/ldapServerRequireStrongAuthFalse.png",
     "NullNUMMER24/Teil2/ressouces/LAM-AccountTypesDefinieren.png",
     "NullNUMMER24/Teil2/Semesterplan.md",
     "authentication server.md",
-    "NullNUMMER24/Teil2/README.md",
     "gibbgschmüdder/M159_Skript_Thema1_Kerberos_V2.6.pdf",
     "VM Gateway warning.md",
     "elis/lb2/Semesterplan.md",
@@ -192,9 +188,6 @@
     "NullNUMMER24/images/InstallattionKerberos-vmLS4-04.png",
     "NullNUMMER24/images/InstallattionKerberos-vmLS4-03.png",
     "NullNUMMER24/images/InstallattionKerberos-vmLS4-02.png",
-    "NullNUMMER24/images/InstallattionKerberos-vmLS4-01.png",
-    "NullNUMMER24/images/HowKerberosV5Works.png",
-    "NullNUMMER24/images/Kerberos.png",
-    "NullNUMMER24/images/KerberosTabelle.png"
+    "NullNUMMER24/images/InstallattionKerberos-vmLS4-01.png"
   ]
 }
