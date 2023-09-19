@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "706b76c2b5881a1d",
+        "id": "95b15885c960c1fd",
         "type": "tabs",
         "children": [
-          {
-            "id": "3b2ec4fcc9e459ca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "elis/lb2/fkit/AB02.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
           {
             "id": "1c88314ae6a25543",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VM Warning.md",
+                "file": "elis/lb2/fkit/AB03.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "elis/lb2/fkit/AB02.md",
+                "file": "elis/lb2/fkit/AB03.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "elis/lb2/fkit/AB02.md",
+                "file": "elis/lb2/fkit/AB03.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "elis/lb2/fkit/AB02.md"
+                "file": "elis/lb2/fkit/AB03.md"
               }
             }
           },
@@ -170,31 +158,33 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3b2ec4fcc9e459ca",
+  "active": "1c88314ae6a25543",
   "lastOpenFiles": [
+    "elis/lb2/fkit/attachments/Pasted image 20230919221627.png",
+    "elis/lb2/fkit/attachments/M159Thema2-AB03.pdf",
+    "elis/lb2/fkit/AB03.md",
+    "elis/lb2/fkit/attachments/Pasted image 20230919220844.png",
+    "elis/lb2/fkit/attachments/Pasted image 20230919220431.png",
+    "elis/lb2/fkit/attachments/Pasted image 20230919215023.png",
+    "VM Warning.md",
+    "elis/lb2/fkit/AB02.md",
+    "elis/lb2/fkit/attachments/Pasted image 20230919211702.png",
+    "elis/lb2/fkit/attachments/Pasted image 20230919211609.png",
+    "elis/lb2/fkit/attachments/Pasted image 20230919210124.png",
+    "Untitled.md",
+    "elis/lb2/fkit/VM preparation.md",
+    "elis/lb2/fkit/AB01.md",
     "elis/lb2/fkit/attachments/Pasted image 20230918225809.png",
     "elis/lb2/fkit/attachments/Pasted image 20230918225651.png",
     "elis/lb2/fkit/attachments/M159Thema2-AB02.pdf",
-    "elis/lb2/fkit/AB02.md",
     "elis/lb2/fkit/attachments/wtf-png.png",
     "elis/lb2/fkit/attachments/Pasted image 20230918223712.png",
-    "elis/lb2/fkit/attachments/Pasted image 20230918223353.png",
-    "elis/lb2/fkit/attachments/Pasted image 20230918223142.png",
-    "elis/lb2/fkit/attachments/Pasted image 20230918222548.png",
-    "elis/lb2/fkit/attachments/Pasted image 20230918222309.png",
-    "elis/lb2/fkit/attachments/Pasted image 20230918222244.png",
-    "elis/lb2/fkit/attachments/Pasted image 20230918222125.png",
-    "elis/lb2/fkit/attachments/Pasted image 20230918222112.png",
-    "elis/lb2/fkit/AB01.md",
-    "VM Warning.md",
     "elis/lb2/Ablauf.md",
     "elis/lb2/fkit/attachments/M159Thema2-AB01_V1.1.pdf",
     "elis/lb2/kw37/kw37.md",
     "elis/lb2/KW36/Konfiguration (AB01).md",
-    "Untitled.md",
     "elis/lb2/kw37/AB03 Note.md",
     "authentication server.md",
-    "elis/lb2/fkit/VM preparation.md",
     "elis/lb2/fkit/attachments",
     "Pasted image 20230918155107.png.md",
     "elis/lb2/kw37/M159Thema2-AB01_V1.1.pdf",
@@ -203,7 +193,6 @@
     "elis/lb2/kw37/M159Thema2-AB02.pdf",
     "elis/lb2/kw37/M159Thema2-AB01.pdf",
     "elis/lb2/configs_vmls1/00-eth0.yaml",
-    "elis/lb2/KW36",
     "NullNUMMER24/Teil2/Semesterplan.md",
     "elis/lb2/Semesterplan.md",
     "NullNUMMER24/Semesterplan.md",
