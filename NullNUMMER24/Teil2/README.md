@@ -97,7 +97,7 @@ Nun muss noch ein neues file unter `/etc/resolv.conf` erstellt werden. Der Inhal
 nameserver 192.168.110.61
 search sam159.iet-gibb.ch
 ```
-##### Neues /etc/resolv.conf erstellen
+##### Neues /etc/samba/smb.conf erstellen
 ```Bash
 # Global parameters
 [global]
